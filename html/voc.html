@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body>
+<script src="../js/voc.js" defer></script>
+<script src="../js/typeGreek.js" defer></script>
+  
+  <header class = "center" id = "titel"><h1><u>GRIEKS</u></h1></header> 
+
+  <div class = "center">
+  <a href = "../index.html" class = "Button"> homepage </a>
+  <a href = "../html/typeGreek.html" class = "Button"> typeGreek </a>
+  </div>
+  
+  <div class = "center">
+    <p class = "Button" id = "Muthos1">Μυθος 1</p>
+    <p class = "Button" id = "Muthos2">Μυθος 2</p>
+    <p class = "Button" id = "Muthos3">Μυθος 3</p>
+    <p class = "Button" id = "Muthos4">Μυθος 4</p>
+    <p class = "Button" id = "Muthos5">Μυθος 5</p>
+    <p class = "Button" id = "vz">Voorzetsels</p>
+    <p class = "Button" id = "zelf_kiezen">zelf kiezen</p>
+     </div>
+
+    
+    <label id = "input" class = "center">
+      <p>Als het woord eindig op een sigma, moet je er een spatie achter laten, anders zal het woord niet herkend worden. Als je een voorzetsel plaatst dan zet je het "voorzetsel" + " "(een spatie daarachter) + "+naamval"(en dan het plusteken en de naamval).Als er haakjes staan in het grondwoord dan laat je de haakjes vallen en schrijf je de lange versie, zoals in "οὑτω(ς)" => "οὑτως ", daar moet ook nog een spatie achter omdat het woord eindigt op een sigma. Als er drie puntjes en/of een komma in zit scrijf je het allemaal aan elkaar, zoals in "μεν ..., δε ..." => "μεν...,δε..."</p>
+      
+      <strong><div id="input-text" class = "voorkant">Eerste woord:</div></strong>
+      
+      <form action="" method="POST" name="greek">
+        <style>#input { display: none }</style>
+        <textarea
+          class="fontSize"
+          onkeypress="return convertCharToggle(this, document.greek.convertGreek.checked);"
+          onkeyup="return convertStr(this, event);"
+          rows="9"
+          cols="50"
+          id="input-field"
+          type = "text"
+        ></textarea>
+        <input type="checkbox" name="convertGreek" checked=checked ; />Naar Grieks vertalen
+      </form>
+    </label>
+
+
+    
+ 
+
+  <div class = "center">
+    <p id = "mythossen"> Zal worden ondervraagd: </p> 
+  </div>
+
+  <div class = "center">
+    <a class = "Button" id = "randomizer">Ondervragen</a>
+    <a class = "Button" id = "antwoord">Antwoord</a>
+    <a class = "Button" id = "herstart">Herstart</a>
+
+  </div>
+
+  <div class = "center">
+    <h2><strong><p id = "random_woord" ></p></strong></h2>
+  </div>
+
+  <div class = "center">
+    <a class = "Button" id ="juist"> Juist </a>
+    <a class = "Button" id ="fout"> Fout </a>
+  </div>
+
+  <div id="custom-alert" class="alert">
+    <span id="alert-message"></span>
+    <button id="alert-ok" class="alert-ok">OK</button>
+  </div>
+  
+
+
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

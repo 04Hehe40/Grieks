@@ -1,0 +1,91 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #FAEBD7;
+
+}
+
+.Button {
+  background:linear-gradient(to bottom, #c7ab1f 5%, #f2e236 100%);
+  background-color:#c7c11f;
+  border-radius:13px;
+  border:1px solid #cd9d18;
+  display:inline-block;
+  cursor:pointer;
+  color:#0d0c0c;
+  font-family:Arial;
+  font-size:25px;
+  padding:7px 25px;
+  text-decoration:none;
+  text-shadow:none; /* Remove the shadow */
+}
+
+.Button:hover {
+  background:linear-gradient(to bottom, #f2d936 5%, #c7ab1f 100%);
+  background-color:#c9f236;
+}
+
+.Button:active {
+  position:relative;
+  top:1px;
+}
+
+.center {
+  text-align: center;
+}
+
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 9999;
+  display: none;
+}
+
+.alert-ok {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#titel{
+  font-size: 30px;
+}
+
+input.borderlessButton {
+    background: url("../Images/button.png") no-repeat scroll 0 0;
+    padding: 5px 10px;
+}
+
+.grootte{
+  height: 37%;
+  width: 37%;
+}
+
+.plaats{
+    float: right;
+}
+.grootte2{
+  height: 20%;
+  width: 20%;
+}
+
+.grootte3{
+  height: 35%;
+  width: 35%;
+}
+
+.plaatsTussen{
+  margin: 10px;
+}
+
+.voorkant{
+  font-size: 20px;
+}
